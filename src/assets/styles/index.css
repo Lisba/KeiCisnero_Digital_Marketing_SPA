@@ -1,0 +1,1005 @@
+/* GLOBAL STYLES */
+
+:root {
+  --theme-color : rgb(59, 89, 152);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* STYLES OF NAVBAR */
+
+.navBarDiv {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 13vh;
+  width: 100%;
+}
+
+.navBarDiv .burgerMenu {
+  display: none;
+}
+
+.navBarDiv .burgerMenuOpened {
+  display: none;
+}
+
+.navBarDiv > div {
+  display: flex;
+  width: 15%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navBarDiv .buttons {
+  width: 40%;
+  padding: 0 3%;
+}
+
+.navBarDiv .buttons div {
+  width: 100%;
+  text-align: center;
+}
+
+.navBarDiv .buttons div a:hover {
+  color: var(--theme-color);
+  font-size: large;
+  text-decoration: none;
+}
+
+.navBarDiv .socialNetworkDiv > div {
+  width: 100%;
+  text-align: center
+}
+
+.navBarDiv div div a {
+  color: rgb(91, 91, 91);
+}
+
+.navBarDiv div div .wapp:hover,
+.navBarDiv div div .quora:hover,
+.navBarDiv div div .facebook:hover,
+.navBarDiv div div .linkedin:hover,
+.navBarDiv div div .instagram:hover {
+  font-size: x-large;
+}
+
+.navBarDiv div div .quora:hover {
+  color: rgb(185, 43, 39);
+}
+
+.navBarDiv div div .wapp:hover {
+  color: rgb(37, 211, 102);
+}
+
+.navBarDiv div div .instagram:hover {
+  color: rgb(226, 29, 121);
+}
+
+.navBarDiv div div .linkedin:hover {
+  color: rgb(72, 117, 180);
+}
+
+.navBarDiv div div .facebook:hover {
+  color: #2f55a4;
+}
+
+/* STYLES OF HOME (ABOUT ME) */
+
+.home {
+  width: 100%;
+  height: 50vh;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.home .react-parallax {
+  width: 100%;
+  height: 100%;
+}
+
+.home .react-parallax .react-parallax-bgimage {
+  top: 30% !important;
+  filter: brightness(0.5) !important;
+}
+
+.home .react-parallax .react-parallax-content {
+  width: 50%;
+  color: white;
+  text-align: center;
+  top: 40%;
+  left: 24%;
+}
+
+.home .react-parallax .react-parallax-content > h1 {
+  font-weight: 700;
+}
+
+
+/* STYLES OF CIRCLE */
+
+.circle {
+  margin: -100px 0 0 0;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.circle > img {
+  border-radius: 50%;
+  max-width: 200px;
+}
+
+/* STYLES OF ARTICLES */
+
+.suspense-div {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suspense-h1 {
+  font-size: 500%;
+  color: rgb(59, 89, 152);
+  font-style: italic;
+}
+
+.articlesDiv {
+  width: 100%;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5% 5% 5% 5%;
+  background-color: rgb(255, 255, 255);
+}
+
+.titleArticles {
+  padding: 1%;
+  font-weight: 500;
+  text-decoration: underline;
+  color: rgb(92, 92, 92);
+}
+
+.groupArticles {
+  padding: 1% 1% 1% 1%;
+  height: 77%;
+  display: flex;
+}
+
+.groupArticles ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* .groupArticles div img {
+  max-width: 45%;
+} */
+
+.upper {
+  align-self: flex-start;
+  width: 44%;
+}
+
+.lower {
+  align-self: flex-end;
+  width: 44%;
+}
+
+.articleLink {
+  display: flex;
+  width: 100%;
+  margin: 1%;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  height: 37vh;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.articleCard {
+  width: 100%;
+  display: flex;
+}
+
+.articleCardImg {
+  width: 50%;
+}
+
+.articleCardText {
+  width: 100%;
+  padding: 1% 5% 1% 5%;
+  margin: 0;/*no influye*/
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  color: rgb(91, 91, 91);
+  background: #ffffff;
+  line-height: 160%;
+  position: relative;
+  /*width: la necesaria;*/
+}
+
+.articleLink:hover {
+  text-decoration: none;
+}
+
+.articleCardText h2 {
+  text-align: center;
+  font-size: 140%;
+}
+
+.articleCardText p {
+  max-height: 8rem;/*line-height por nº de líneas*/
+  overflow: hidden;
+  text-align: center;
+}
+
+/* .articleLink .articleCardText p::after {
+  content: '...';
+  background: #ffffff;
+  position: absolute;
+  top: 173px;
+  right: 19px; max-height menos 1 line-height
+} */
+
+.articlesDiv .articleReadMoreButton {
+  width: 100%;
+  margin: 2% 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.articlesDiv .articleReadMoreButton > a {
+  width: 20%;
+}
+
+/* .articlesDiv .articleReadMoreButton > a > button {
+  padding: 4% 10%;
+  background-color: #007bff;
+  color: white;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.articlesDiv .articleReadMoreButton > a > button:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+} */
+
+.btn {
+  width: 100%;
+  padding: 8% 12% 8% 12%;
+}
+
+/* STYLES OF ARTICLES LIST */
+
+.articleCardListDiv {
+  display: flex;
+  justify-content: center;
+}
+
+
+.articleCardListUl {
+  width: 90%;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aritcleCardListLi {
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+  border-bottom: 1px #ddd solid;
+}
+
+.articleLinkList:hover {
+  text-decoration: none;
+}
+
+.articleCardListContainer {
+  width: 100%;
+  display: flex;
+}
+
+.articleListText {
+  padding: 1% 5% 1% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(92, 92, 92);
+  text-align: center;
+}
+
+.articleListText > h2 {
+  width: 80%;
+  font-size: 1.6rem;
+}
+
+.articleListText > p {
+  width: 100%;
+}
+
+/* STYLES OF ARTICLES CONTENT */
+
+.articleContent {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.articleContentHeader {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px 0 0 0;
+}
+
+.articleContentImg {
+  width: 100%;
+}
+
+.articleContentBody {
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0 30px 0;
+  font-size: 21px;
+}
+
+.articleContentBody > h1,
+.articleContentBody > h2,
+.articleContentBody > h3,
+.articleContentBody > h4,
+.articleContentBody > h5,
+.articleContentBody > h6 {
+  margin-bottom: 1rem;
+}
+
+.articleContentBody > p,
+.articleContentBody > ol,
+.articleContentBody > ul {
+  margin-bottom: 2rem;
+}
+
+.articleContentBody img {
+  width: 100%;
+  align-self: center;
+}
+
+/* STYLES OF ONLINE ENTREPRENEURSHIP */
+
+.online-entrepreneurship {
+  width: 100%;
+  height: 50vh;
+  min-height: 600px;
+  position: relative;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.online-entrepreneurship .react-parallax {
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.online-entrepreneurship .react-parallax .react-parallax-bgimage {
+  top: 48% !important;
+  filter: brightness(0.5) !important;
+}
+
+.online-entrepreneurship .react-parallax .react-parallax-content {
+  margin: 0 0 0 10%;
+  top: 50%;
+  color: white;
+}
+
+.online-entrepreneurship .div5 {
+  position: absolute;
+  top: 9%;
+  left: 55%;
+}
+
+.online-entrepreneurship .div6 {
+  position: absolute;
+  top: 34%;
+  left: 69%;
+}
+
+.online-entrepreneurship .div7 {
+  position: absolute;
+  top: 54%;
+  left: 81%;
+}
+
+.online-entrepreneurship .div8 {
+  position: absolute;
+  top: 77%;
+  left: 72%;
+}
+
+.online-entrepreneurship a div img:hover {
+  transform: scale(1.2);
+  transition: all .8s;
+}
+
+/* STYLES OF GALLERY */
+
+.gallery {
+  width: 100%;
+  background-color: white;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  margin: 3% 0 0 0;
+}
+
+.gallery > div {
+  height: 100%;
+  width: 80%;
+}
+
+.carousel {
+  text-align: center;
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider .slide {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel .thumbs-wrapper.axis-vertical {
+  margin: 10px;
+}
+
+/* STYLES OF FOOTER */
+
+.footer {
+  width: 100%;
+  height: 70vh;
+  background-color: #333333;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1%;
+}
+
+.socialNetworks,
+.name,
+.navButtons {
+  width: 33%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name {
+  justify-content: center;
+  align-items: center;
+  align-content: space-evenly;
+}
+
+.name p {
+  color: #737373;
+  margin: 0;
+}
+
+.name p:hover {
+  color: #ffffff;
+}
+
+.navButtons,
+.socialNetworks {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.groupFooterButtons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 32%;
+}
+
+.groupFooterButtons div {
+  padding: 3% 2%;
+  text-align: center;
+}
+
+.groupFooterButtons div a {
+  color: #737373;
+}
+
+.groupFooterButtons div a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.socialNetworks div {
+  width: 45%;
+  height: 34%;
+  margin: 0 0 0 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socialNetworks div div a {
+  color: #737373;
+}
+
+.socialNetworks div div a:hover {
+  font-size: x-large;
+  color: #ffffff;
+}
+
+.finalFooter {
+  width: 53%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.finalFooter p {
+  color: #737373;
+  margin: 0;
+}
+
+.finalFooter p:hover {
+  color: #ffffff;
+}
+
+.finalFooter .heart {
+  color: #f23a2e;
+}
+
+.finalFooter span:nth-child(2) {
+  height: 1.5rem;
+  margin: 0 0 0 1%;
+}
+
+.finalFooter > span:last-child {
+  height: 1.5rem;
+  margin: 0 0 0 1%;
+}
+
+.finalFooter .wapp:hover,
+.finalFooter .linkedin:hover {
+  font-size: large;
+}
+
+.finalFooter .wapp {
+  color: rgb(37, 211, 102);
+}
+
+.finalFooter .linkedin {
+  color: rgb(72, 117, 180);
+}
+
+/* STYLES OF 404 NOT FOUND PAGE */
+
+#notfound {
+  position: relative;
+  height: 87vh;
+}
+
+#notfound .notfound-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../static/lost.jpg');
+  background-size: cover;
+  background-position: 0% 60%;
+}
+
+#notfound .notfound-bg:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#notfound .notfound:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  transform: translate(-50% , -50%);
+  width: 100%;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0.7) inset;
+  box-shadow: 0px 0px 0px 30px rgba(255, 255, 255, 0.7) inset;
+  z-index: -1;
+}
+
+.notfound {
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  line-height: 1.4;
+}
+
+.notfound .notfound-404 {
+  position: relative;
+  height: 200px;
+}
+
+.notfound .notfound-404 h1 {
+  font-family: 'Passion One', cursive;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 220px;
+  margin: 0px;
+  color: #222225;
+  text-transform: uppercase;
+}
+
+.notfound h2 {
+  font-family: 'Muli', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222225;
+  margin-top: 26px;
+  margin-bottom: 20px;
+}
+
+.notfound a {
+  font-family: 'Muli', sans-serif;
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: transparent;
+  color: #222225;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.notfound-social {
+  margin-bottom: 15px;
+}
+.notfound-social>a {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  width: 40px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #222225;
+  margin: 3px;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+.notfound-social>a:hover {
+  color: #fff;
+  background-color: var(--theme-color);
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* STYLES OF NAVBAR */
+
+  .navBarDiv {
+    display: flex;
+  }
+
+  .navBarDiv .socialNetworkDiv {
+    width: 30%;
+  }
+  
+  .navBarDiv .buttons {
+    display: none;
+  }
+
+  .navBarDiv .burgerMenu {
+    display: flex;
+    width: 12%;
+    font-size: 180%;
+    padding: 0 0 0 5%;
+  }
+
+  .navBarDiv .burgerMenuOpened {
+    width: 90%;
+    height: 104vh;
+    position: fixed;
+    top: 0%;
+    left: 100%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: var(--theme-color);
+    transition: all 0.5s;
+    overflow-y: scroll;
+  }
+  
+  .navBarDiv .burgerMenuOpened .socialNetworksList .burgerMenuButtons > div {
+    margin: 15% 0;
+    font-size: 200%;
+    text-align: center;
+  }
+
+  .navBarDiv .burgerMenuOpened .cerrar {
+    font-size: 200%;
+    position: absolute;
+    top: 4%;
+    right: 10%;
+  }
+
+  .navBarDiv .burgerMenuOpened .socialNetworksList .burgerMenuButtons > div > a{
+    color: var(--theme-color);
+  }
+
+    /* STYLES OF HOME */
+
+  .home .react-parallax .react-parallax-content {
+    width: 90%;
+    top: 40%;
+    left: 5%;
+  }
+  
+  .home .react-parallax .react-parallax-bgimage {
+    top: 38% !important;
+    left: 71% !important;
+  }
+
+  .home .react-parallax .react-parallax-content > h1 {
+    font-size: 1.5rem;
+  }
+
+  /* STYLES OF ARTICLES */
+
+  .articlesDiv {
+    height: 100%;
+    padding: 5% 5% 10% 5%;
+  }
+
+  .articlesDiv .titleArticles {
+    margin: 0 0 10% 0;
+  }
+
+  .articlesDiv .articleReadMoreButton > a {
+    width: 60%;
+  }
+
+  .articlesDiv .groupArticles {
+    height: 100%;
+  }
+
+  .upper,
+  .lower {
+    width: 100%;
+    margin: 0 0 5% 0;
+  }
+
+  .articleLink {
+    height: 100%;
+  }
+
+  .articleLink .articleCard {
+    flex-direction: column;
+  }
+
+  .articleLink .articleCard .articleCardImg {
+    width: 100%;
+  }
+
+  .articleLink .articleCard .articleCardImg > img {
+    width: 100%;
+  }
+
+  .articleLink .articleCard .articleCardText {
+    padding: 5% 8% 5% 8%;
+    width: 100%;
+  }
+
+  .articleLink .articleCard .articleCardText > p {
+    text-align: start;
+  }
+
+  .articleLink .articleCard .articleCardText > p::after {
+    display: none;
+  }
+
+  /* STYLES OF ARTICLES CONTENT */
+
+  .articleContent .articleContentBody {
+    font-size: 18px;
+  }
+
+  /* STYLES OF ONLINE-ENTREPRENEURSHIP */
+
+  .online-entrepreneurship {
+    min-height: 500px;
+  }
+
+  .online-entrepreneurship .react-parallax .react-parallax-content {
+    width: 100%;
+    margin: 0;
+    top: 5%;
+    left: 0%;
+    text-align: center;
+  }
+
+  .online-entrepreneurship .react-parallax .react-parallax-content > h1 {
+    font-size: 2rem;
+  }
+
+  .online-entrepreneurship .react-parallax .react-parallax-bgimage {
+    top: 46% !important;
+    left: 83% !important;
+  }
+
+  .online-entrepreneurship > ul > a > .div5 {
+    width: 100%;
+    top: 17%;
+    left: 0;
+  }
+
+  .online-entrepreneurship > ul > a > .div5 > img {
+    margin: 0 0 0 70%;
+  }
+
+  .online-entrepreneurship > ul > a > .div6 {
+    width: 100%;
+    top: 35%;
+    left: 0;
+  }
+
+  .online-entrepreneurship > ul > a > .div6 > img {
+    margin: 0 0 0 78%;
+  }
+
+  .online-entrepreneurship > ul > a > .div7 {
+    width: 100%;
+    top: 50%;
+    left: 0;
+  }
+
+  .online-entrepreneurship > ul > a > .div7 > img {
+    margin: 0 0 0 82%;
+  }
+
+  .online-entrepreneurship > ul > a > .div8 {
+    width: 100%;
+    top: 70%;
+    left: 0;
+  }
+
+  .online-entrepreneurship > ul > a > .div8 > img {
+    margin: 0 0 0 68%;
+  }
+
+  .online-entrepreneurship > ul > a > div > img {
+    width: 14%;
+  }
+
+  /* STYLES OF GALLERY */
+
+  .gallery {
+    margin: 10% 0 0 0;
+  }
+
+  .gallery > div {
+    width: 90%;
+  }
+
+  /* STYLES OF FOOTER */
+  
+  .name {
+    width: 90%;
+  }
+
+  .name p {
+    text-align: center;
+  }
+
+  .navButtons {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+
+  .groupFooterButtons {
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+  }
+
+  .groupFooterButtons div {
+    padding: 3% 2%;
+    text-align: center;
+    width: 25%;
+  }
+  
+  .socialNetworks {
+    width: 60%;
+    justify-content: space-evenly;
+  }
+  
+  .socialNetworks div {
+    width: 100%;
+    font-size: x-large;
+  }
+  
+  .finalFooter {
+    width: 90%;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+  }
+  
+  .finalFooter p {
+    text-align: center;
+  }
+
+  .finalFooter span:nth-child(2) {
+    font-size: x-large;
+  }
+  
+  .finalFooter > span:last-child {
+    margin: 0 0 0 2%;
+    font-size: x-large;
+  }
+
+    /* STYLES OF 404 NOT FOUND PAGE */
+
+  #notfound .notfound-bg {
+    background-position: 43% 0%;
+  }
+  
+}
+
+@media only screen and (max-width: 480px) {
+  
+  /* STYLES OF 404 NOT FOUND PAGE */
+  
+  .notfound .notfound-404 {
+    height: 146px;
+  }
+
+  .notfound .notfound-404 h1 {
+    font-size: 146px;
+  }
+
+  .notfound h2 {
+    font-size: 22px;
+  }
+}
