@@ -1,5 +1,3 @@
-# SPA_Digital_Marketing_NO_CRA
+# SPA_Digital_Marketing
 
-Digital Marketing Single Page Aplication created without create-react-app
-
-This was created using webpack-dev-server
+Digital Marketing Single Page Aplication created using react, react-router, webpack, babel, ESlint, SASS. (No create-react-app).
