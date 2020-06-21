@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Lisba.github.io/SPA_Digital_Marketing_no_cra/",
+  "homepage": "https://Lisba.github.io/SPA_Digital_Marketing_no_cra",
   "name": "marketing_digital_keimarly",
   "version": "1.0.0",
   "description": "",
@@ -9,7 +9,7 @@
     "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
