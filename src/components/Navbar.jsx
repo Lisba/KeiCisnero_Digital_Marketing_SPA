@@ -5,8 +5,6 @@ import NavButtons from './NavButtons';
 
 const Navbar = () => {
 
-    const img = require('../assets/static/kei-cisnero.jpg');
-
     function showMenu()
     {
         document.getElementById('burgerMenuOpened').style.left = '10%'
@@ -19,7 +17,7 @@ const Navbar = () => {
 
     return (
         <nav className="navBarDiv">
-            <Link to="/" className="logo"><img src={img.default} alt="logo"/></Link>
+            <Link to="/" className="logo"><img src={require('../assets/static/kei-cisnero.jpg').default} alt="logo"/></Link>
             <NavButtons className="buttons" />
             <div className="socialNetworkDiv">
                 <SocialNetworks />
@@ -28,11 +26,11 @@ const Navbar = () => {
                 <i className="fas fa-bars abrir" onClick={showMenu}></i>
             </div>
             <nav id="burgerMenuOpened" className="burgerMenuOpened" onClick={hideMenu}>
-                    <i className="fas fa-times cerrar"></i>
-                    <ul className="socialNetworksList">
-                        <NavButtons className="burgerMenuButtons" />
-                    </ul>
-                </nav>
+                <i className="fas fa-times cerrar"></i>
+                <ul className="socialNetworksList">
+                    <NavButtons className="burgerMenuButtons" />
+                </ul>
+            </nav>
         </nav>
     )
 }

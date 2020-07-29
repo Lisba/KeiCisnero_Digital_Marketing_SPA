@@ -1,6 +1,10 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-import App from './containers/App.jsx';
-// import './assets/styles/index.css';
+import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/styles/index.css';
+import App from './routes/App';
 
-ReactDom.render(<App/>, document.getElementById('app'));
+ReactDOM.render(
+  <App/>,
+  document.getElementById('root')
+);

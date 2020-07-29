@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
-const Post = (props) => {
-    return <React.Fragment>{props.postContent}</React.Fragment>
+const Post = ({ postContent }) => {
+    return <Fragment>{ postContent }</Fragment>
 }
 
 export default Post;

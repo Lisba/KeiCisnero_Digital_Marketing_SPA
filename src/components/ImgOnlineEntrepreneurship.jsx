@@ -1,12 +1,9 @@
 import React from 'react';
 
 const ImgOnlineEntrepreneurship = (props) => {
-    
-    const img = require('../' + props.src);
-
     return(
         <div className={props.classe}>
-            <img src={img.default} alt={props.alt} />
+            <img src={props.src.default} alt={props.alt} />
         </div>
     )
 }

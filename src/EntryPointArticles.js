@@ -1,9 +1,24 @@
 export default [
     {
         id: 1,
+        home: 1,
+        title: "Emprendamos Online",
+        folder: "./posts/post10.mdx",
+        icon: "assets/static/icon-person-holding-samsung-galaxy-s8.jpg",
+        cover_image: "assets/static/outdoors-entrepreneurship.jpg",
+        author: {
+            "name": "Kei Cisnero",
+            "email": "keimarly.mc@gmail.com"
+            },
+        tags: ["marketing-digital", "online-marketing"],
+        description: "Cada vez son más las personas interesadas en emprender con sus redes sociales desde cualquier lugar del mundo",
+        date: "July 1, 2020"
+    },
+    {
+        id: 2,
         title: "¿Para que hacemos Marketing?",
-        folder: "assets/posts/post1.mdx",
-        icon: "assets/static/electronics.jpg",
+        folder: "./posts/post1.mdx",
+        icon: "assets/static/icon-electronics.jpg",
         cover_image: "assets/static/electronics.jpg",
         author: {
             "name": "Kei Cisnero",
@@ -14,10 +29,11 @@ export default [
         date: "Apr 23, 2020"
     },
     {
-        id: 2,
+        id: 3,
+        home: 3,
         title: "¿Que es el branding de marca?",
-        folder: "assets/posts/post2.mdx",
-        icon: "assets/static/workDesk.jpg",
+        folder: "./posts/post2.mdx",
+        icon: "assets/static/icon-workDesk.jpg",
         cover_image: "assets/static/workDesk.jpg",
         author: {
             "name": "Kei Cisnero",
@@ -28,10 +44,11 @@ export default [
         date: "Apr 22, 2020",
     },
     {
-        id: 3,
+        id: 4,
+        home: 4,
         title: "¿Por que hacemos Marketing?",
-        folder: "assets/posts/post3.mdx",
-        icon: "assets/static/woman-raising-hands.jpg",
+        folder: "./posts/post3.mdx",
+        icon: "assets/static/icon-woman-raising-hands.jpg",
         cover_image: "assets/static/woman-raising-hands.jpg",
         author: {
             "name": "Kei Cisnero",
@@ -42,24 +59,11 @@ export default [
         date: "Apr 21, 2020"
     },
     {
-        id: 4,
-        title: "¿Entonces cuando Marketing?",
-        folder: "assets/posts/post4.mdx",
-        icon: "assets/static/computer-desk.jpg",
-        cover_image: "assets/static/computer-desk.jpg",
-        author: {
-            "name": "Kei Cisnero",
-            "email": "keimarly.mc@gmail.com"
-            },
-        tags: ["marketing digital", "branding", "marca", "guia"],
-        description: "Post 4!! Gracias a los buscadores y otras herramientas de redes sociales, los hábitos del consumidor han dado un vuelco radical en los últimos años tanto es así, que la manera tradicional de entender el marketing ya no tiene sentido, puesto que los patrones de compra han cambiado por completo. Un ejemplo de ello es este concepto de Google que tiene la capacidad de darle la vuelta a todo tu marketing: el Zero Moment of Truth (ZMOT).",
-        date: "Apr 20, 2020"
-    },
-    {
         id: 5,
         title: "Google Ads Article",
-        folder: "assets/posts/post5.mdx",
-        icon: "assets/static/g-color.png",
+        folder: "./posts/post5.mdx",
+        icon_Online_Entrepreneurship: "assets/static/g-color.png",
+        icon: "assets/static/icon-computer-desk.jpg",
         cover_image: "assets/static/computer-with-keyboard.jpg",
         author: {
             "name": "Kei Cisnero",
@@ -71,58 +75,90 @@ export default [
     },
     {
         id: 6,
-        title: "Youtube Article",
-        folder: "assets/posts/post6.mdx",
-        icon: "assets/static/y-color.png",
-        cover_image: "assets/static/person-holding-tablet.jpg",
+        title: "Razones para monetizar en Youtube",
+        folder: "./posts/post6.mdx",
+        icon_Online_Entrepreneurship: "assets/static/y-color.png",
+        icon: "assets/static/icon-youtube.jpg",
+        cover_image: "assets/static/youtube-image.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
             },
-        tags: ["marketing digital", "branding", "marca", "guia"],
-        description: "Youtube Article! Gracias a los buscadores y otras herramientas de redes sociales, los hábitos del consumidor han dado un vuelco radical en los últimos años. Tanto es así, que la manera tradicional de entender el marketing ya no tiene sentido, puesto que los patrones de compra han cambiado por completo. Un ejemplo de ello es este concepto de Google que tiene la capacidad de darle la vuelta a todo tu marketing: el Zero Moment of Truth (ZMOT).",
+        tags: ["marketing-digital", "branding", "marca", "guia"],
+        description: "Por medio de este canal digital se encuentra más del 80% de los millenials (generación amante de los vídeos por excelencia). A partir de 1000 visualizaciones youtube te paga un porcetaje que podría alcanzar los 500$",
         date: "Apr 20, 2020"
     },
     {
         id: 7,
-        title: "Hotmart Article",
-        folder: "assets/posts/post7.mdx",
-        icon: "assets/static/h-color.png",
+        title: "¿Qué es hotmart?",
+        folder: "./posts/post7.mdx",
+        icon_Online_Entrepreneurship: "assets/static/h-color.png",
+        icon: "assets/static/icon-computer-desk.jpg",
         cover_image: "assets/static/person-using-macbook.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
             },
-        tags: ["marketing digital", "branding", "marca", "guia"],
-        description: "Hotmart Article! Gracias a los buscadores y otras herramientas de redes sociales, los hábitos del consumidor han dado un vuelco radical en los últimos años. Tanto es así, que la manera tradicional de entender el marketing ya no tiene sentido, puesto que los patrones de compra han cambiado por completo. Un ejemplo de ello es este concepto de Google que tiene la capacidad de darle la vuelta a todo tu marketing: el Zero Moment of Truth (ZMOT).",
-        date: "Apr 20, 2020"
+        tags: ["hotmart", "marketing de afiliacion", "marketing digital"],
+        description: "Es una plataforma digital en la cual se distribuyen productos online, digitales, funcionando por medio del marketing de afiliación.",
+        date: "July 2, 2020"
     },
     {
         id: 8,
-        title: "Instagram Article",
-        folder: "assets/posts/post8.mdx",
-        icon: "assets/static/i-color.png",
+        title: "¿Por qué es una excelente alternativa generar ingresos por instagram?",
+        folder: "./posts/post8.mdx",
+        icon_Online_Entrepreneurship: "assets/static/i-color.png",
+        icon: "assets/static/icon-computer-desk.jpg",
         cover_image: "assets/static/smilingWoman.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
             },
-        tags: ["marketing digital", "branding", "marca", "guia"],
-        description: "Instagram Article! Gracias a los buscadores y otras herramientas de redes sociales, los hábitos del consumidor han dado un vuelco radical en los últimos años. Tanto es así, que la manera tradicional de entender el marketing ya no tiene sentido, puesto que los patrones de compra han cambiado por completo. Un ejemplo de ello es este concepto de Google que tiene la capacidad de darle la vuelta a todo tu marketing: el Zero Moment of Truth (ZMOT).",
-        date: "Apr 20, 2020"
+        tags: ["marketing digital", "instagram"],
+        description: "Son muchisímas las empresas a nivel mundial que usan esta red social para promocionar sus productos y servicios.",
+        date: "July 2, 2020"
     },
     {
         id: 9,
         title: "¿Qué es el marketing digital?",
-        folder: "assets/posts/post9.mdx",
-        icon: "assets/static/i-color.png",
-        cover_image: "assets/static/smilingWoman.jpg",
+        folder: "./posts/post9.mdx",
+        icon: "assets/static/icon-computer-desk.jpg",
+        cover_image: "assets/static/computer-desk.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
             },
-        tags: ["marketing digital", "guia"],
-        description: "Marketing Digital. Gracias a los buscadores y otras herramientas de redes sociales, los hábitos del consumidor han dado un vuelco radical en los últimos años.",
+        tags: ["marketing digital", "conceptos"],
+        description: "El marketing digital es un conjunto de estrategias direccionadas a la comunicción y comercialización de productos y servicios.Por este medio las personas satisfacen deseos y necesidades a través de un proyecto, producto, servicio, creación o negocición.",
         date: "May 11, 2020"
+    },
+    {
+        id: 10,
+        home: 2,
+        title: "Nómada digital",
+        folder: "./posts/post10.mdx",
+        icon: "assets/static/icon-computer-desk.jpg",
+        cover_image: "assets/static/computer-desk.jpg",
+        author: {
+            "name": "Kei Cisnero",
+            "email": "keimarly.mc@gmail.com"
+            },
+        tags: ["marketing digital", "nomada digital", "digital", "nomada"],
+        description: "Convertirse un nómada digital, es romper con esquemas y paradigmas impuestos por la sociedad. Es perseguir tu libertad financiera, de tiempo y de espacio. Es un estilo de vida en el cuál dejas atrás un modo de vivir tradicional, el trabajo rutinario de 8:00am a 5:00pm, en el cual es más valorada tu presencia y asistencia a la empresa que tu productividad y mérito por logros o resultados obtenidos.",
+        date: "July 2, 2020"
+    },
+    {
+        id: 11,
+        title: "Marketing de afiliación",
+        folder: "./posts/post11.mdx",
+        icon: "assets/static/icon-computer-desk.jpg",
+        cover_image: "assets/static/computer-desk.jpg",
+        author: {
+            "name": "Kei Cisnero",
+            "email": "keimarly.mc@gmail.com"
+            },
+        tags: ["marketing digital", "marketing de afiliacion"],
+        description: "Con el mundo de la tecnología en auge, en el marketing digital aparecen nuevas alternativas para atraer la atención de los usuarios, internautas y consumidores.",
+        date: "July 2, 2020"
     }
 ];

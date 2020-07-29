@@ -91,9 +91,9 @@
   color: #2f55a4;
 }
 
-/* STYLES OF HOME (ABOUT ME) */
+/* STYLES OF START */
 
-.home {
+.start {
   width: 100%;
   height: 50vh;
   min-height: 600px;
@@ -105,17 +105,17 @@
   background-color: rgba(0,0,0,0.3);
 }
 
-.home .react-parallax {
+.start .react-parallax {
   width: 100%;
   height: 100%;
 }
 
-.home .react-parallax .react-parallax-bgimage {
+.start .react-parallax .react-parallax-bgimage {
   top: 30% !important;
   filter: brightness(0.5) !important;
 }
 
-.home .react-parallax .react-parallax-content {
+.start .react-parallax .react-parallax-content {
   width: 50%;
   color: white;
   text-align: center;
@@ -123,7 +123,7 @@
   left: 24%;
 }
 
-.home .react-parallax .react-parallax-content > h1 {
+.start .react-parallax .react-parallax-content > h1 {
   font-weight: 700;
 }
 
@@ -143,20 +143,6 @@
 }
 
 /* STYLES OF ARTICLES */
-
-.suspense-div {
-  width: 100%;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.suspense-h1 {
-  font-size: 500%;
-  color: rgb(59, 89, 152);
-  font-style: italic;
-}
 
 .articlesDiv {
   width: 100%;
@@ -191,14 +177,28 @@
   max-width: 45%;
 } */
 
-.upper {
+.upper1 {
   align-self: flex-start;
   width: 44%;
+  order: 1;
 }
 
-.lower {
+.lower2 {
   align-self: flex-end;
   width: 44%;
+  order: 2;
+}
+
+.upper3 {
+  align-self: flex-start;
+  width: 44%;
+  order: 3;
+}
+
+.lower4 {
+  align-self: flex-end;
+  width: 44%;
+  order: 4;
 }
 
 .articleLink {
@@ -282,7 +282,7 @@
   border-color: #0062cc;
 } */
 
-.btn {
+.articleReadMoreButton > a > .btn {
   width: 100%;
   padding: 8% 12% 8% 12%;
 }
@@ -293,7 +293,6 @@
   display: flex;
   justify-content: center;
 }
-
 
 .articleCardListUl {
   width: 90%;
@@ -722,7 +721,7 @@
   .navBarDiv .socialNetworkDiv {
     width: 30%;
   }
-  
+
   .navBarDiv .buttons {
     display: none;
   }
@@ -751,7 +750,7 @@
     transition: all 0.5s;
     overflow-y: scroll;
   }
-  
+
   .navBarDiv .burgerMenuOpened .socialNetworksList .burgerMenuButtons > div {
     margin: 15% 0;
     font-size: 200%;
@@ -769,20 +768,20 @@
     color: var(--theme-color);
   }
 
-    /* STYLES OF HOME */
+    /* STYLES OF START */
 
-  .home .react-parallax .react-parallax-content {
+  .start .react-parallax .react-parallax-content {
     width: 90%;
     top: 40%;
     left: 5%;
   }
-  
-  .home .react-parallax .react-parallax-bgimage {
+
+  .start .react-parallax .react-parallax-bgimage {
     top: 38% !important;
     left: 71% !important;
   }
 
-  .home .react-parallax .react-parallax-content > h1 {
+  .start .react-parallax .react-parallax-content > h1 {
     font-size: 1.5rem;
   }
 
@@ -838,6 +837,19 @@
 
   .articleLink .articleCard .articleCardText > p::after {
     display: none;
+  }
+
+  /* STYLES OF ARTICLES LIST */
+
+  .articleCardListContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .articleListText {
+    padding-top: 5%;
   }
 
   /* STYLES OF ARTICLES CONTENT */
@@ -924,7 +936,7 @@
   }
 
   /* STYLES OF FOOTER */
-  
+
   .name {
     width: 90%;
   }
@@ -949,23 +961,23 @@
     text-align: center;
     width: 25%;
   }
-  
+
   .socialNetworks {
     width: 60%;
     justify-content: space-evenly;
   }
-  
+
   .socialNetworks div {
     width: 100%;
     font-size: x-large;
   }
-  
+
   .finalFooter {
     width: 90%;
     flex-wrap: wrap;
     align-content: space-evenly;
   }
-  
+
   .finalFooter p {
     text-align: center;
   }
@@ -973,7 +985,7 @@
   .finalFooter span:nth-child(2) {
     font-size: x-large;
   }
-  
+
   .finalFooter > span:last-child {
     margin: 0 0 0 2%;
     font-size: x-large;
@@ -984,13 +996,13 @@
   #notfound .notfound-bg {
     background-position: 43% 0%;
   }
-  
+
 }
 
 @media only screen and (max-width: 480px) {
-  
+
   /* STYLES OF 404 NOT FOUND PAGE */
-  
+
   .notfound .notfound-404 {
     height: 146px;
   }
@@ -1002,4 +1014,61 @@
   .notfound h2 {
     font-size: 22px;
   }
+}
+
+/* STYLES OF SPINNER */
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid var(--theme-color);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: var(--theme-color) transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* STYLES OF SUSPENSE LOADING TEXT */
+
+.suspense-div {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.suspense-h1 {
+  font-size: 500%;
+  color: var(--theme-color);
+  font-style: italic;
 }

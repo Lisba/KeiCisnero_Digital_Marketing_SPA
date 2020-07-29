@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
             <div className="finalFooter">
                 <p>Copyright ©2020 All rights reserved | This web is made with <span className="heart"><i className="fas fa-heart"></i></span> by Lisbaldy Ojeda Leon</p>
-                <span><a className="wapp" href="https://api.whatsapp.com/send?phone=5491132307105&text=" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a></span> 
+                <span><a className="wapp" href="https://api.whatsapp.com/send?phone=5491132307105&text=" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a></span>
                 <span><a className="linkedin" href="https://www.linkedin.com/in/lisbaldyojeda/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a></span>
             </div>
         </div>
