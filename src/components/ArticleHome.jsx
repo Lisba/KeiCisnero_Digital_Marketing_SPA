@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ArticleCard from './ArticleCard';
 import Articles from '../EntryPointArticles';
@@ -18,7 +18,7 @@ const ArticleHome = () => {
                                 (item.home) &&
                                 <li key={item.id} className={`${item.home === 1 ? 'upper1' : item.home === 2 ? 'lower2' : item.home === 3 ? 'upper3' : 'lower4'}`}>
                                     <Link to={`/articles/${item.id}`} className={`articleLink card${item.home}`}>
-                                        <ArticleCard className={classNameArticleCard} icon={item.icon} imgRoute={item.cover_image} alt={item.cover_image} title={item.title} text={item.description} imgContainer="articleCardImg" textContainer="articleCardText" width="250" height="250" />
+                                        <ArticleCard className={classNameArticleCard} icon={item.icon} placeholderImage={require('../assets/static/outdoors-entrepreneurshipPH.jpg').default} imgRoute={item.cover_image} alt={item.cover_image} title={item.title} text={item.description} imgContainer="articleCardImg" textContainer="articleCardText" width="250" height="250" />
                                     </Link>
                                 </li>
                             )

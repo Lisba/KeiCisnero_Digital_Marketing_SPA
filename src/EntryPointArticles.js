@@ -6,6 +6,7 @@ export default [
         folder: "./posts/post10.mdx",
         icon: "assets/static/icon-person-holding-samsung-galaxy-s8.jpg",
         cover_image: "assets/static/outdoors-entrepreneurship.jpg",
+        placeHolder_Image: "assets/static/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -20,6 +21,7 @@ export default [
         folder: "./posts/post1.mdx",
         icon: "assets/static/icon-electronics.jpg",
         cover_image: "assets/static/electronics.jpg",
+        placeHolder_Image: "assets/static/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -35,6 +37,7 @@ export default [
         folder: "./posts/post2.mdx",
         icon: "assets/static/icon-workDesk.jpg",
         cover_image: "assets/static/workDesk.jpg",
+        placeHolder_Image: "assets/static/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -50,6 +53,7 @@ export default [
         folder: "./posts/post3.mdx",
         icon: "assets/static/icon-woman-raising-hands.jpg",
         cover_image: "assets/static/woman-raising-hands.jpg",
+        placeHolder_Image: "assets/static/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -65,6 +69,7 @@ export default [
         icon_Online_Entrepreneurship: "assets/static/g-color.png",
         icon: "assets/static/icon-computer-desk.jpg",
         cover_image: "assets/static/computer-with-keyboard.jpg",
+        placeHolder_Image: "assets/static/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -80,6 +85,7 @@ export default [
         icon_Online_Entrepreneurship: "assets/static/y-color.png",
         icon: "assets/static/icon-youtube.jpg",
         cover_image: "assets/static/youtube-image.jpg",
+        placeHolder_Image: "assets/static/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -95,6 +101,7 @@ export default [
         icon_Online_Entrepreneurship: "assets/static/h-color.png",
         icon: "assets/static/icon-computer-desk.jpg",
         cover_image: "assets/static/person-using-macbook.jpg",
+        placeHolder_Image: "assets/static/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -110,6 +117,7 @@ export default [
         icon_Online_Entrepreneurship: "assets/static/i-color.png",
         icon: "assets/static/icon-computer-desk.jpg",
         cover_image: "assets/static/smilingWoman.jpg",
+        placeHolder_Image: "assets/static/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -124,6 +132,7 @@ export default [
         folder: "./posts/post9.mdx",
         icon: "assets/static/icon-computer-desk.jpg",
         cover_image: "assets/static/computer-desk.jpg",
+        placeHolder_Image: "assets/static/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -139,6 +148,7 @@ export default [
         folder: "./posts/post10.mdx",
         icon: "assets/static/icon-computer-desk.jpg",
         cover_image: "assets/static/computer-desk.jpg",
+        placeHolder_Image: "assets/static/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"
@@ -153,6 +163,7 @@ export default [
         folder: "./posts/post11.mdx",
         icon: "assets/static/icon-computer-desk.jpg",
         cover_image: "assets/static/computer-desk.jpg",
+        placeHolder_Image: "assets/static/outdoors-entrepreneurshipPH.jpg",
         author: {
             "name": "Kei Cisnero",
             "email": "keimarly.mc@gmail.com"

@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Parallax } from 'react-parallax';
 
-const Start = () => {
+const Start = React.memo( ({ src, alt="" }) => {
     return(
         <div className="start">
             <Parallax
             blur={0}
-            bgImage={require('../assets/static/laptop-next-to-coffe-cup.jpg').default}
-            bgImageAlt="womanInSofa"
+            bgImage={src}
+            bgImageAlt={alt}
             strength={600}
             bgImageStyle={{top:'-50%'}}
             >
@@ -15,6 +15,6 @@ const Start = () => {
             </Parallax>
         </div>
     )
-}
+});
 
 export default Start;

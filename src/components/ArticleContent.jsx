@@ -2,12 +2,13 @@ import React, { useState, useEffect, Fragment, Suspense } from 'react';
 import { useParams } from 'react-router-dom';
 import Articles from '../EntryPointArticles';
 import NotFoundPage from '../containers/NotFoundPage';
+import LoadImage from './LoadImage';
 
 const Post = React.lazy( () => import(`./Post`));
 
 const ArticleContent = () => {
 
-    let {id} = useParams();
+    let { id } = useParams();
     let parsedId = parseInt(id); // For use strict equality operator below.
     const [post, setPost] = useState('');
     let articleData = {};
@@ -42,6 +43,7 @@ const ArticleContent = () => {
 
     return (
         <Fragment>
+            {/*This ternary operator for the case a Dynamic Route doesn't exist*/}
             {
                 (!boolean) ? <NotFoundPage /> :
                 <Fragment>
@@ -50,7 +52,7 @@ const ArticleContent = () => {
                             <div className="articleContentTitleDiv"><h1 className="articleContentTitle">{articleData.title}</h1></div>
                             <div className="articleContentAuthor">{articleData.author.name}</div>
                             <div className="articleContentDate">{articleData.date}</div>
-                            <div className="articleContentImgDiv"><img className="articleContentImg" src={require('../' + articleData.cover_image).default} alt="img"/></div>
+                            <LoadImage src={require('../' + articleData.cover_image).default} placeholder={require('../' + articleData.placeHolder_Image).default} alt="img"/>
                         </div>
                         <div className="articleContentBody">
                             <Suspense delayMs={500} fallback={<div className="lds-ring"><div></div><div></div><div></div><div></div></div>}>
@@ -59,7 +61,7 @@ const ArticleContent = () => {
                         </div>
                     </article>
                 </Fragment>
-            } {/*This ternary operator for the case a Dynamic Route doesn't exist*/}
+            }
         </Fragment>
     )
 }

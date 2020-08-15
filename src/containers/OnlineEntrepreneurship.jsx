@@ -4,11 +4,11 @@ import { Parallax } from 'react-parallax';
 import ImgOnlineEntrepreneurship from '../components/ImgOnlineEntrepreneurship';
 import Articles from '../EntryPointArticles'
 
-const OnlineEntrepreneurship = () => {
+const OnlineEntrepreneurship = ({ src }) => {
 
     return(
         <div className="online-entrepreneurship">
-            <Parallax blur={0} bgImage={require('../assets/static/woman-drinking-coffee.jpg').default} bgImageAlt="computer-desk" strength={600} bgImageStyle={{top:'-50%'}} >
+            <Parallax blur={0} bgImage={src} bgImageAlt="computer-desk" strength={600} bgImageStyle={{top:'-50%'}} >
                 <h1>Emprende Online</h1>
             </Parallax>
             <ul>
