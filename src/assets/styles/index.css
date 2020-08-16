@@ -177,28 +177,37 @@
   max-width: 45%;
 } */
 
+.hidden {
+  display: none;
+}
+
 .upper1 {
   align-self: flex-start;
   width: 44%;
   order: 1;
+  animation: articleCardLeftToRight 2s linear 0s 1 normal forwards;
 }
 
 .lower2 {
   align-self: flex-end;
   width: 44%;
   order: 2;
+  animation: articleCardRightToLeft 2s linear 0s 1 normal forwards;
 }
 
 .upper3 {
   align-self: flex-start;
   width: 44%;
   order: 3;
+  animation: articleCardLeftToRight 2s linear 0s 1 normal forwards;
+
 }
 
 .lower4 {
   align-self: flex-end;
   width: 44%;
   order: 4;
+  animation: articleCardRightToLeft 2s linear 0s 1 normal forwards;
 }
 
 .articleLink {
@@ -1027,6 +1036,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .lds-ring div {
   box-sizing: border-box;
   display: block;
@@ -1039,15 +1049,19 @@
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: var(--theme-color) transparent transparent transparent;
 }
+
 .lds-ring div:nth-child(1) {
   animation-delay: -0.45s;
 }
+
 .lds-ring div:nth-child(2) {
   animation-delay: -0.3s;
 }
+
 .lds-ring div:nth-child(3) {
   animation-delay: -0.15s;
 }
+
 @keyframes lds-ring {
   0% {
     transform: rotate(0deg);
@@ -1071,4 +1085,26 @@
   font-size: 500%;
   color: var(--theme-color);
   font-style: italic;
+}
+
+/* ANIMATIONS */
+
+@keyframes articleCardLeftToRight {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(12px, -10px);
+  }
+}
+
+@keyframes articleCardRightToLeft {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-12px, -10px);
+  }
 }

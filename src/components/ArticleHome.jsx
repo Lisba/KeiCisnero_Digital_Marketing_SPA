@@ -6,7 +6,23 @@ import Button from 'react-bootstrap/Button';
 
 const ArticleHome = () => {
 
-    const classNameArticleCard = "articleCard";
+    const classNameArticleCard = 'articleCard';
+    const [homeOneClassName, setHomeOneClassName] = useState('hidden');
+    const [homeTwoClassName, sethomeTwoClassName] = useState('hidden');
+    const [homeThreeClassName, sethomeThreeClassName] = useState('hidden');
+    const [homeFourClassName, sethomeFourClassName] = useState('hidden');
+
+    useEffect(() => {
+        window.onscroll = () => {
+            if(window.scrollY > 180)
+            {
+                setHomeOneClassName('upper1')
+                sethomeTwoClassName('lower2')
+                sethomeThreeClassName('upper3');
+                sethomeFourClassName('lower4');
+            }
+        }
+    }, []);
 
     return(
         <div className="articlesDiv">
@@ -16,7 +32,7 @@ const ArticleHome = () => {
                     {
                         Articles.map(item => (
                                 (item.home) &&
-                                <li key={item.id} className={`${item.home === 1 ? 'upper1' : item.home === 2 ? 'lower2' : item.home === 3 ? 'upper3' : 'lower4'}`}>
+                                <li key={item.id} className={`${item.home === 1 ? homeOneClassName : item.home === 2 ? homeTwoClassName : item.home === 3 ? homeThreeClassName : homeFourClassName}`}>
                                     <Link to={`/articles/${item.id}`} className={`articleLink card${item.home}`}>
                                         <ArticleCard className={classNameArticleCard} icon={item.icon} placeholderImage={require('../assets/static/outdoors-entrepreneurshipPH.jpg').default} imgRoute={item.cover_image} alt={item.cover_image} title={item.title} text={item.description} imgContainer="articleCardImg" textContainer="articleCardText" width="250" height="250" />
                                     </Link>

@@ -8,6 +8,11 @@ const ArticleHome = React.lazy(() => import('../components/ArticleHome'));
 
 const Home = () => {
 
+    window.scroll({
+        top: 0,
+        left: 0,
+    });
+
     const [loading, setLoading] = useState(true);
     const loadCompleted = [false, false];
 
