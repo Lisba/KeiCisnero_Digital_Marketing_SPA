@@ -813,11 +813,13 @@
     height: 100%;
   }
 
-  .upper,
-  .lower {
+  /* .upper1,
+  .upper3,
+  .lower2,
+  .lower4 {
     width: 100%;
     margin: 0 0 5% 0;
-  }
+  } */
 
   .articleLink {
     height: 100%;
@@ -1011,6 +1013,16 @@
 @media only screen and (max-width: 480px) {
 
   /* STYLES OF 404 NOT FOUND PAGE */
+
+  .upper1,
+  .upper3,
+  .lower2,
+  .lower4 {
+    width: 90%;
+    margin: 0 0 5% 0;
+    max-width: 290px;
+    animation-name: none;
+  }
 
   .notfound .notfound-404 {
     height: 146px;
