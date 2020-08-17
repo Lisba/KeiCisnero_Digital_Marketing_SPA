@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import ArticleContent from '../components/ArticleContent';
 import NotFoundPage from '../containers/NotFoundPage';
 import Home from '../containers/Home';
-import OnlineEntrepreneurship from '../containers/OnlineEntrepreneurship';
+import OnlineEntrepreneurshipRender from '../containers/OnlineEntrepreneurshipRender';
 import Gallery from '../containers/Gallery';
 import Layout from '../components/Layout';
 
@@ -29,7 +29,7 @@ function App() {
           </Route>
 
           <Route exact path="/online-entrepreneurship">
-            <OnlineEntrepreneurship />
+            <OnlineEntrepreneurshipRender alone />
           </Route>
 
           <Route exact path="/gallery">

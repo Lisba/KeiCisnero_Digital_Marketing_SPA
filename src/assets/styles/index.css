@@ -203,14 +203,14 @@
 .upper3 {
   align-self: flex-start;
   order: 3;
-  animation: articleCardLeftToRight 2.2s ease-out 0s 1 normal forwards;
+  animation: articleCardLeftToRight 2.2s ease-in-out 0s 1 normal forwards;
 
 }
 
 .lower4 {
   align-self: flex-end;
   order: 4;
-  animation: articleCardRightToLeft 2.2s ease-out 0s 1 normal forwards;
+  animation: articleCardRightToLeft 2.2s ease-in-out 0s 1 normal forwards;
 }
 
 .articleLink {
@@ -425,28 +425,28 @@
   position: absolute;
   top: 18%;
   left: 55%;
-  animation: onlineEntrepreneurshipIcons 1.5s linear 0s 1 normal forwards;
+  animation: onlineEntrepreneurshipIcons 1.5s ease-out 0s 1 normal forwards;
 }
 
 .online-entrepreneurship .div6 {
   position: absolute;
   top: 40%;
   left: 69%;
-  animation: onlineEntrepreneurshipIcons 1.8s linear 0s 1 normal forwards;
+  animation: onlineEntrepreneurshipIcons 1.8s ease-out 0s 1 normal forwards;
 }
 
 .online-entrepreneurship .div7 {
   position: absolute;
   top: 60%;
   left: 81%;
-  animation: onlineEntrepreneurshipIcons 2.1s linear 0s 1 normal forwards;
+  animation: onlineEntrepreneurshipIcons 2.1s ease-out 0s 1 normal forwards;
 }
 
 .online-entrepreneurship .div8 {
   position: absolute;
   top: 85%;
   left: 72%;
-  animation: onlineEntrepreneurshipIcons 2.4s linear 0s 1 normal forwards;
+  animation: onlineEntrepreneurshipIcons 2.4s ease-out 0s 1 normal forwards;
 }
 
 .online-entrepreneurship a div img:hover {
