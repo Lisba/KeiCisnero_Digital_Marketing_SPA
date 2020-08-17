@@ -150,7 +150,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 5% 5% 5% 5%;
+  padding: 5% 1% 5% 1%;
   background-color: rgb(255, 255, 255);
 }
 
@@ -170,7 +170,7 @@
 .groupArticles ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 /* .groupArticles div img {
@@ -181,33 +181,36 @@
   display: none;
 }
 
+.upper1,
+.upper3,
+.lower2,
+.lower4 {
+  width: 40%;
+}
+
 .upper1 {
   align-self: flex-start;
-  width: 44%;
   order: 1;
-  animation: articleCardLeftToRight 2s linear 0s 1 normal forwards;
+  animation: articleCardLeftToRight 1.7s ease-out 0s 1 normal forwards;
 }
 
 .lower2 {
   align-self: flex-end;
-  width: 44%;
   order: 2;
-  animation: articleCardRightToLeft 2s linear 0s 1 normal forwards;
+  animation: articleCardRightToLeft 1.7s ease-out 0s 1 normal forwards;
 }
 
 .upper3 {
   align-self: flex-start;
-  width: 44%;
   order: 3;
-  animation: articleCardLeftToRight 2s linear 0s 1 normal forwards;
+  animation: articleCardLeftToRight 2.2s ease-out 0s 1 normal forwards;
 
 }
 
 .lower4 {
   align-self: flex-end;
-  width: 44%;
   order: 4;
-  animation: articleCardRightToLeft 2s linear 0s 1 normal forwards;
+  animation: articleCardRightToLeft 2.2s ease-out 0s 1 normal forwards;
 }
 
 .articleLink {
@@ -420,26 +423,30 @@
 
 .online-entrepreneurship .div5 {
   position: absolute;
-  top: 9%;
+  top: 18%;
   left: 55%;
+  animation: onlineEntrepreneurshipIcons 1.5s linear 0s 1 normal forwards;
 }
 
 .online-entrepreneurship .div6 {
   position: absolute;
-  top: 34%;
+  top: 40%;
   left: 69%;
+  animation: onlineEntrepreneurshipIcons 1.8s linear 0s 1 normal forwards;
 }
 
 .online-entrepreneurship .div7 {
   position: absolute;
-  top: 54%;
+  top: 60%;
   left: 81%;
+  animation: onlineEntrepreneurshipIcons 2.1s linear 0s 1 normal forwards;
 }
 
 .online-entrepreneurship .div8 {
   position: absolute;
-  top: 77%;
+  top: 85%;
   left: 72%;
+  animation: onlineEntrepreneurshipIcons 2.4s linear 0s 1 normal forwards;
 }
 
 .online-entrepreneurship a div img:hover {
@@ -813,13 +820,19 @@
     height: 100%;
   }
 
-  /* .upper1,
+  .groupArticles > ul {
+    justify-content: space-around;
+  }
+
+  .upper1,
   .upper3,
   .lower2,
   .lower4 {
-    width: 100%;
-    margin: 0 0 5% 0;
-  } */
+    width: 90%;
+    margin: 0 2% 5% 2%;
+    max-width: 290px;
+    animation-name: none;
+  }
 
   .articleLink {
     height: 100%;
@@ -896,6 +909,7 @@
     width: 100%;
     top: 17%;
     left: 0;
+    animation-name: none;
   }
 
   .online-entrepreneurship > ul > a > .div5 > img {
@@ -906,6 +920,7 @@
     width: 100%;
     top: 35%;
     left: 0;
+    animation-name: none;
   }
 
   .online-entrepreneurship > ul > a > .div6 > img {
@@ -916,6 +931,7 @@
     width: 100%;
     top: 50%;
     left: 0;
+    animation-name: none;
   }
 
   .online-entrepreneurship > ul > a > .div7 > img {
@@ -926,6 +942,7 @@
     width: 100%;
     top: 70%;
     left: 0;
+    animation-name: none;
   }
 
   .online-entrepreneurship > ul > a > .div8 > img {
@@ -1037,7 +1054,7 @@
   }
 }
 
-/* STYLES OF SPINNER */
+/* STYLES AND ANIMATION OF SPINNER */
 
 .lds-ring {
   display: inline-block;
@@ -1107,7 +1124,7 @@
   }
   100% {
     opacity: 1;
-    transform: translate(12px, -10px);
+    transform: translate(15%, -10%);
   }
 }
 
@@ -1117,6 +1134,16 @@
   }
   100% {
     opacity: 1;
-    transform: translate(-12px, -10px);
+    transform: translate(-15%, -10%);
+  }
+}
+
+@keyframes onlineEntrepreneurshipIcons {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, -70%);
   }
 }

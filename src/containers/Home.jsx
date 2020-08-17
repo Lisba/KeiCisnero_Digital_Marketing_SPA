@@ -18,8 +18,10 @@ const Home = () => {
 
     const startImage = new Image();
     const OnlineEntrepreneurshipImage = new Image();
+
     startImage.src = require('../assets/static/laptop-next-to-coffe-cup.jpg').default;
     OnlineEntrepreneurshipImage.src = require('../assets/static/woman-drinking-coffee.jpg').default;
+
     startImage.onload = () => {
         loadCompleted[0] = true;
         if(loadCompleted[0] && loadCompleted[1])
@@ -27,6 +29,7 @@ const Home = () => {
             setLoading(false);
         }
     }
+
     OnlineEntrepreneurshipImage.onload = () => {
         loadCompleted[1] = true;
         if(loadCompleted[0] && loadCompleted[1])
