@@ -1,15 +1,15 @@
 {
-  "homepage": "https://Lisba.github.io/SPA_Digital_Marketing_no_cra",
+  "homepage": "https://keicisnero-digital-marketing.web.app/",
   "name": "marketing_digital_keimarly",
-  "version": "1.0.0",
-  "description": "",
+  "version": "2.0.0",
+  "description": "Kei Cisnero Single Page Application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
     "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production",
     "predeploy": "npm run build",
-    "deploy": "firebase deploy"
+    "deploy": "firebase deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
