@@ -1,10 +1,11 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import ArticleContent from '../components/ArticleContent';
-import NotFoundPage from '../containers/NotFoundPage';
 import Home from '../containers/Home';
+import Aboutme from '../containers/Aboutme';
+import ArticleContent from '../components/ArticleContent';
 import OnlineEntrepreneurshipRender from '../containers/OnlineEntrepreneurshipRender';
 import Gallery from '../containers/Gallery';
+import NotFoundPage from '../containers/NotFoundPage';
 import Layout from '../components/Layout';
 
 const ArticleList = React.lazy(() => import('../containers/ArticleList'));
@@ -16,6 +17,10 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Home />
+          </Route>
+
+          <Route exact path="/aboutme">
+            <Aboutme />
           </Route>
 
           <Route exact path="/articles">

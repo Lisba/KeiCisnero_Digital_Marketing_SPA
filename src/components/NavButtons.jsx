@@ -5,13 +5,18 @@ const NavButtons = (props) => {
     return(
         <div className={props.className}>
             <div>
+                <Link to="/aboutme">
+                    Sobre Mí
+                </Link>
+            </div>
+            <div>
                 <Link to="/">
-                    Home
+                    Servicios
                 </Link>
             </div>
             <div>
                 <Link to="/articles">
-                    Artículos
+                    Blog
                 </Link>
             </div>
             <div>
