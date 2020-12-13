@@ -52,6 +52,17 @@ module.exports = {
                 test: /\.mdx?$/,
                 use: ['babel-loader', '@mdx-js/loader']
             },
+            {
+                test: /\.svg$/,
+                use: [
+                    {
+                        loader: 'svg-url-loader',
+                        options: {
+                            limit: 10000,
+                        },
+                    },
+                ],
+            },
         ],
     },
     devServer: {
