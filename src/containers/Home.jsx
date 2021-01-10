@@ -1,8 +1,6 @@
 import React, { useState, Fragment, Suspense } from 'react';
-import Start from '../components/Start';
-import Circle from '../components/Circle';
-import OnlineEntrepreneurshipRender from './OnlineEntrepreneurshipRender';
-import Gallery from './Gallery';
+import { Start, Circle } from '../components';
+import { OnlineEntrepreneurshipRender, Gallery } from '../containers';
 
 const ArticleHome = React.lazy(() => import('../components/ArticleHome'));
 
