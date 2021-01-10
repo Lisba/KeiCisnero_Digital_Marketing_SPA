@@ -1,12 +1,12 @@
 import React from 'react';
-import '../assets/styles/containers/Aboutme.scss'
+import './styles.scss'
 
 const Aboutme = () => {
     return (
         <div className="aboutMeDiv">
             <div className="aboutmeContent">
                 <div className="aboutmePhotoDiv">
-                    <img src={require('../assets/static/aboutme.jpg').default} alt="Keima"/>
+                    <img src={require('../../assets/static/aboutme.jpg').default} alt="Keima"/>
                     <p>Egresada Universitaria en Administración y Gerencia especializada en Marketing Digital.</p>
                 </div>
                 <div className="aboutmeSubTitles">

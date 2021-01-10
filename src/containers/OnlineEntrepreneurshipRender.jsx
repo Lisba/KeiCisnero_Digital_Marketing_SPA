@@ -1,5 +1,5 @@
 import React, { useState, Fragment } from 'react';
-import OnlineEntrepreneurship from '../components/OnlineEntrepreneurship';
+import { OnlineEntrepreneurship } from '../components';
 
 const OnlineEntrepreneurshipRender = (props) => {
 

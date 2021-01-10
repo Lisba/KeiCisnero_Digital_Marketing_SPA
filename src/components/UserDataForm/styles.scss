@@ -1,0 +1,109 @@
+  .modal-window {
+    width: 100%;
+    height: 100vh;
+    background: rgba(40,40,40,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 1;
+  }
+
+  .modal_content {
+    width: 60%;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .modal-header {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .modal-header .header-title {
+    width: 96%;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    font-size: 190%;
+    color: black;
+  }
+
+  .modal-header .header-close {
+    padding: 0.5%;
+    margin: 0.5%;
+    cursor: pointer;
+    font-size: 190%;
+    color: black;
+  }
+
+  .modal-header .header-close:hover {
+    color: red;
+  }
+
+  .contact-form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-form > .contactFormField {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-form > .contactFormField > label {
+    width: 70%;
+    color: black;
+  }
+
+  .contact-form > .contactFormField > input {
+    width: 70%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-form > .contactFormField > textarea {
+    width: 70%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contactFormField > label > .textarea-label-span {
+      color: rgb(168, 167, 167);
+  }
+
+  .contact-form > input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 14px;
+    background-color: var(--theme-color);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 130%;
+    width: 30%;
+    margin: 1% 0 1% 2%;
+  }
+
+  .error-label {
+      color: red;
+      font-size: 70%;
+      align-self: flex-start;
+      width: 70%;
+      margin: auto;
+  }

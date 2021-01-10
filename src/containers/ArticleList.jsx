@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Articles from '../EntryPointArticles';
-import ArticleCard from '../components/ArticleCard';
+import { ArticleCard } from '../components';
 
 const ArticleList = () => {
 
