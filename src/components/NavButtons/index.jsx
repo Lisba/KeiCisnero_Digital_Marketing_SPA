@@ -8,29 +8,31 @@ const NavButtons = ({ className }) => {
     const onClickHandler = () => setShowModal(prevState => !prevState);
 
     return (
-        <div className={className}>
+        <>
             {showModal && <UserDataForm closeModal={setShowModal} />}
-            <div>
-                <Link to="/articles">
-                    Blog
-                </Link>
+            <div className={className}>
+                <div>
+                    <Link to="/articles">
+                        Blog
+                    </Link>
+                </div>
+                <div>
+                    <Link to="/online-entrepreneurship">
+                        Emprende Online
+                    </Link>
+                </div>
+                <div>
+                    <Link to="/gallery">
+                        Galería
+                    </Link>
+                </div>
+                <div>
+                    <Link onClick={onClickHandler}>
+                        Contáctame
+                    </Link>
+                </div>
             </div>
-            <div>
-                <Link to="/online-entrepreneurship">
-                    Emprende Online
-                </Link>
-            </div>
-            <div>
-                <Link to="/gallery">
-                    Galería
-                </Link>
-            </div>
-            <div>
-                <Link onClick={onClickHandler}>
-                    Contáctame
-                </Link>
-            </div>
-        </div>
+        </>
     )
 };
 
