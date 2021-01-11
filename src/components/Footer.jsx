@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SocialNetworks from './SocialNetworks';
 import NavButtons from './NavButtons';
 
@@ -26,6 +26,6 @@ const Footer = () => {
             </div>
         </div>
     )
-}
+};
 
 export default Footer;

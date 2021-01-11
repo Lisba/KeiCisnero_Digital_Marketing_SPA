@@ -54,6 +54,7 @@
   .contact-form {
     display: flex;
     width: 100%;
+    padding: 1% 0 3% 0;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -105,9 +106,10 @@
   }
 
   .error-label {
-      color: red;
-      font-size: 70%;
-      align-self: flex-start;
-      width: 70%;
-      margin: auto;
+    width: 70%;
+    margin: auto;
+    align-self: flex-start;
+    text-align: start;
+    color: red;
+    font-size: 70%;
   }

@@ -11,17 +11,19 @@ const ArticleHome = () => {
     const [homeTwoClassName, sethomeTwoClassName] = useState('hidden');
     const [homeThreeClassName, sethomeThreeClassName] = useState('hidden');
     const [homeFourClassName, sethomeFourClassName] = useState('hidden');
+    let mounted = true;
 
     useEffect(() => {
         window.onscroll = () => {
-            if(window.scrollY > 180)
+            if(window.scrollY > 180 && mounted)
             {
-                setHomeOneClassName('upper1')
-                sethomeTwoClassName('lower2')
+                setHomeOneClassName('upper1');
+                sethomeTwoClassName('lower2');
                 sethomeThreeClassName('upper3');
                 sethomeFourClassName('lower4');
             }
         }
+        return () => mounted = false;
     }, []);
 
     return(
@@ -29,12 +31,23 @@ const ArticleHome = () => {
             <h1 className="titleArticles">Artículos</h1>
             <div className="groupArticles">
                 <ul className="groupArticlesUl">
-                    {
-                        Articles.map(item => (
-                                (item.home) &&
+                    {Articles.map(item => (
+                            (item.home) &&
                                 <li key={item.id} className={`${item.home === 1 ? homeOneClassName : item.home === 2 ? homeTwoClassName : item.home === 3 ? homeThreeClassName : homeFourClassName}`}>
                                     <Link to={`/articles/${item.id}`} className={`articleLink card${item.home}`}>
-                                        <ArticleCard className={classNameArticleCard} icon={item.icon} placeholderImage={require('../assets/static/outdoors-entrepreneurshipPH.jpg').default} imgRoute={item.cover_image} alt={item.cover_image} title={item.title} text={item.description} imgContainer="articleCardImg" textContainer="articleCardText" width="250" height="250" />
+                                        <ArticleCard
+                                            className={classNameArticleCard}
+                                            icon={item.icon}
+                                            placeholderImage={require('../assets/static/outdoors-entrepreneurshipPH.jpg').default}
+                                            imgRoute={item.cover_image}
+                                            alt={item.cover_image}
+                                            title={item.title}
+                                            text={item.description}
+                                            imgContainer="articleCardImg"
+                                            textContainer="articleCardText"
+                                            width="250"
+                                            height="250"
+                                        />
                                     </Link>
                                 </li>
                             )
@@ -49,6 +62,6 @@ const ArticleHome = () => {
             </div>
         </div>
     )
-}
+};
 
 export default ArticleHome;

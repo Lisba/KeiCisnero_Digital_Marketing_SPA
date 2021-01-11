@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
-const ImgOnlineEntrepreneurship = (props) => {
+const ImgOnlineEntrepreneurship = ({ classe, src, alone, alt }) => {
 
     const [divClassName, setDivClassName] = useState('hidden');
 
-    if(props.alone)
+    if(alone)
     {
         window.scroll({
             top: 0,
@@ -14,9 +15,9 @@ const ImgOnlineEntrepreneurship = (props) => {
 
     useEffect(() => {
 
-        if(props.alone)
+        if(alone)
         {
-            setDivClassName(props.classe);
+            setDivClassName(classe);
         }
         else
         {
@@ -24,7 +25,7 @@ const ImgOnlineEntrepreneurship = (props) => {
             {
                 if(window.scrollY > 1250)
                 {
-                    setDivClassName(props.classe);
+                    setDivClassName(classe);
                 }
             };
             window.addEventListener('scroll', scrollHandler, { passive: true });
@@ -39,9 +40,16 @@ const ImgOnlineEntrepreneurship = (props) => {
 
     return(
         <div className={divClassName}>
-            <img src={props.src.default} alt={props.alt} />
+            <img src={src.default} alt={alt} />
         </div>
     )
-}
+};
+
+ImgOnlineEntrepreneurship.propTypes = {
+    classe: PropTypes.string,
+    src: PropTypes.object,
+    alone: PropTypes.bool,
+    alt: PropTypes.string
+};
 
 export default ImgOnlineEntrepreneurship;

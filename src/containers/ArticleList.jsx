@@ -4,7 +4,6 @@ import Articles from '../EntryPointArticles';
 import { ArticleCard } from '../components';
 
 const ArticleList = () => {
-
     window.scroll({
         top: 0,
         left: 0,
@@ -27,6 +26,6 @@ const ArticleList = () => {
             </ul>
         </div>
     )
-}
+};
 
 export default ArticleList;

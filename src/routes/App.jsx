@@ -1,8 +1,7 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Home, OnlineEntrepreneurshipRender, Gallery, NotFoundPage } from '../containers';
-import ArticleContent from '../components/ArticleContent';
-import Layout from '../components/Layout';
+import { Layout, ArticleContent } from '../components';
 
 const ArticleList = React.lazy(() => import('../containers/ArticleList'));
 

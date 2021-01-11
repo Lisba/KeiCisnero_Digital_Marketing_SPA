@@ -18,6 +18,6 @@ const Aboutme = () => {
             </div>
         </div>
     )
-}
+};
 
 export default Aboutme;

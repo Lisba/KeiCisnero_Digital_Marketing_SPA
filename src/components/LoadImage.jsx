@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
-const ImageLoad = React.memo(({ src, placeholder, alt="" }) => {
+const ImageLoad = React.memo(({ src, placeholder, alt = "" }) => {
   const [loading, setLoading] = useState(true);
   const [currentSrc, setCurrentSrc] = useState(placeholder);
 
@@ -27,5 +28,11 @@ const ImageLoad = React.memo(({ src, placeholder, alt="" }) => {
     />
   )
 });
+
+ImageLoad.propTypes = {
+  src: PropTypes.string,
+  alt: PropTypes.string,
+  placeholder: PropTypes.string,
+};
 
 export default ImageLoad;

@@ -21,6 +21,11 @@
   align-items: center;
   height: 13vh;
   width: 100%;
+  /* position: fixed; for sticky navBar
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #fff; */
 }
 
 .navBarDiv .burgerMenu {

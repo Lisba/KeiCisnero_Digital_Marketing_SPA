@@ -1,23 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SocialNetworks from './SocialNetworks';
-import NavButtons from './NavButtons';
+import { SocialNetworks, NavButtons } from '../../components';
 
 const Navbar = () => {
-
-    function showMenu()
-    {
-        document.getElementById('burgerMenuOpened').style.left = '10%'
-    }
-
-    function hideMenu()
-    {
-        document.getElementById('burgerMenuOpened').style.left = '100%'
-    }
+    const showMenu = () => {
+        document.getElementById('burgerMenuOpened').style.left = '10%';
+    };
+    const hideMenu = () => {
+        document.getElementById('burgerMenuOpened').style.left = '100%';
+    };
 
     return (
         <nav className="navBarDiv">
-            <Link to="/" className="logo"><img src={require('../assets/static/kei-cisnero.jpg').default} alt="logo"/></Link>
+            <Link to="/" className="logo"><img src={require('../../assets/static/kei-cisnero.jpg').default} alt="logo"/></Link>
             <NavButtons className="buttons" />
             <div className="socialNetworkDiv">
                 <SocialNetworks />
@@ -33,6 +28,6 @@ const Navbar = () => {
             </nav>
         </nav>
     )
-}
+};
 
 export default Navbar;
