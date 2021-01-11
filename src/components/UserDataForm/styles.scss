@@ -1,4 +1,4 @@
-  .modal-window {
+  #modal-window {
     width: 100%;
     height: 100vh;
     background: rgba(40,40,40,0.7);
@@ -6,11 +6,12 @@
     top: 0;
     left: 0;
     display: flex;
-    z-index: 1;
+    z-index: 10;
   }
 
-  .modal_content {
+  #modal_content {
     width: 60%;
+    text-align: start;
     margin: auto;
     background: white;
     border-radius: 10px;
@@ -20,11 +21,13 @@
     flex-wrap: wrap;
   }
 
-  .modal-header {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
+  #modal-header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    border-bottom: none;
   }
 
   .modal-header .header-title {
@@ -69,6 +72,7 @@
   .contact-form > .contactFormField > label {
     width: 70%;
     color: black;
+    text-align: start;
   }
 
   .contact-form > .contactFormField > input {

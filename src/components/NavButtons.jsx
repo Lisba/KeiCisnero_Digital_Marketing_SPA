@@ -1,19 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { UserDataForm } from '../components'
 
 const NavButtons = (props) => {
-    return(
+    const [showModal, setShowModal] = useState(false);
+    const onClickHandler = () => setShowModal(prevState => !prevState);
+
+    return (
         <div className={props.className}>
-            <div>
-                <Link to="/aboutme">
-                    Sobre Mí
-                </Link>
-            </div>
-            <div>
-                <Link to="/">
-                    Servicios
-                </Link>
-            </div>
+            {showModal && <UserDataForm closeModal={setShowModal} />}
             <div>
                 <Link to="/articles">
                     Blog
@@ -27,6 +22,11 @@ const NavButtons = (props) => {
             <div>
                 <Link to="/gallery">
                     Galería
+                </Link>
+            </div>
+            <div>
+                <Link to="/" onClick={onClickHandler}>
+                    Contáctame
                 </Link>
             </div>
         </div>

@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com';
 import { nameFieldValidations, emailFieldValidations } from '../../helpers'
 import './styles.scss';
 
-const UserDataForm = ({ closeModal }) => {
+const UserDataForm = ({ closeModal, message = true, name = true }) => {
     const [errors, setErrors] = useState({ name: false, email: false });
 
     const handleSubmit = (event) => {
@@ -48,27 +48,31 @@ const UserDataForm = ({ closeModal }) => {
       }
 
     return (
-    <div id="modal" className="modal-window">
-        <div className="modal_content">
-            <div className="modal-header">
-                <h1 className="header-title">¡Hagamos algo grande juntos!</h1>
+    <div id="modal" className="modal-window" id="modal-window">
+        <div className="modal_content" id="modal_content">
+            <div className="modal-header" id="modal-header">
+                <h1 className="header-title">¡Responderé a la brevedad posible!</h1>
                 <span className="header-close" id="close" onClick={closeModalHandler}>&times;</span>
             </div>
             <form id="contact_form" className="contact-form" onSubmit={handleSubmit}>
-                <div className="contactFormField">
-                    <label>Nombre</label>
-                    <input type="text" name="user_name" id="user_name" onChange={handleOnChange} />
-                    {errors.name && <span className="error-label">Revisa este campo</span>}
-                </div>
+                {name &&
+                    <div className="contactFormField">
+                        <label>Nombre</label>
+                        <input type="text" name="user_name" id="user_name" onChange={handleOnChange} />
+                        {errors.name && <span className="error-label">Revisa este campo</span>}
+                    </div>
+                }
                 <div className="contactFormField">
                     <label>Email</label>
                     <input type="text" name="user_email" id="user_email" onChange={handleOnChange} />
                     {errors.email && <span className="error-label">Revisa este campo</span>}
                 </div>
-                <div className="contactFormField">
-                    <label>Mensaje<span className="textarea-label-span"> - opcional</span></label>
-                    <textarea cols="20" rows="2" name="message" id="message"/>
-                </div>
+                {message &&
+                    <div className="contactFormField">
+                        <label>Mensaje<span className="textarea-label-span"> - opcional</span></label>
+                        <textarea cols="20" rows="2" name="message" id="message"/>
+                    </div>
+                }
                 <input type="submit" id="button" value="Enviar" />
             </form>
         </div>
