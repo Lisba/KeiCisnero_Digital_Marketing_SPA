@@ -6,7 +6,7 @@ const Post = ({ postContent }) => {
 };
 
 Post.propTypes = {
-    postContent: PropTypes.string,
+    postContent: PropTypes.element,
 };
 
 export default Post;

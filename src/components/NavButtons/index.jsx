@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { UserDataForm } from '../components'
+import { UserDataForm } from '../../components'
 import PropTypes from 'prop-types';
 
 const NavButtons = ({ className }) => {
@@ -26,7 +26,7 @@ const NavButtons = ({ className }) => {
                 </Link>
             </div>
             <div>
-                <Link to="/" onClick={onClickHandler}>
+                <Link onClick={onClickHandler}>
                     Contáctame
                 </Link>
             </div>

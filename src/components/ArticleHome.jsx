@@ -11,17 +11,19 @@ const ArticleHome = () => {
     const [homeTwoClassName, sethomeTwoClassName] = useState('hidden');
     const [homeThreeClassName, sethomeThreeClassName] = useState('hidden');
     const [homeFourClassName, sethomeFourClassName] = useState('hidden');
+    let mounted = true;
 
     useEffect(() => {
         window.onscroll = () => {
-            if(window.scrollY > 180)
+            if(window.scrollY > 180 && mounted)
             {
-                setHomeOneClassName('upper1')
-                sethomeTwoClassName('lower2')
+                setHomeOneClassName('upper1');
+                sethomeTwoClassName('lower2');
                 sethomeThreeClassName('upper3');
                 sethomeFourClassName('lower4');
             }
         }
+        return () => mounted = false;
     }, []);
 
     return(
