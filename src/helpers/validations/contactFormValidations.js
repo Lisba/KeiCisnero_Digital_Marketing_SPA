@@ -1,4 +1,4 @@
-import { userNameRegex, userEmailRegex } from '../globalConstants';
+import { userNameRegex, userEmailRegex } from '../../helpers';
 
 export const nameFieldValidations = (name) => {
     return userNameRegex.test(name)

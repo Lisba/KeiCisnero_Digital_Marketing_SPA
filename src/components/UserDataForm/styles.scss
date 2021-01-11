@@ -11,6 +11,7 @@
 
   #modal_content {
     width: 60%;
+    min-width: 320px;
     text-align: start;
     margin: auto;
     background: white;
@@ -35,7 +36,7 @@
     margin: 0;
     padding: 0;
     align-self: center;
-    font-size: 190%;
+    font-size: 190 rem;
     color: black;
   }
 
