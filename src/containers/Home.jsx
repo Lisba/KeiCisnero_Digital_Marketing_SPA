@@ -5,7 +5,6 @@ import { OnlineEntrepreneurshipRender, Gallery } from '../containers';
 const ArticleHome = React.lazy(() => import('../components/ArticleHome'));
 
 const Home = () => {
-
     window.scroll({
         top: 0,
         left: 0,
@@ -51,6 +50,6 @@ const Home = () => {
             }
         </Fragment>
     )
-}
+};
 
-export default Home
+export default Home;

@@ -3,7 +3,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 const Gallery = () => {
-
     let images = [];
 
     for(let i=1; i<19; i++){
@@ -24,6 +23,6 @@ const Gallery = () => {
             </Carousel>
         </div>
     )
-}
+};
 
 export default Gallery;

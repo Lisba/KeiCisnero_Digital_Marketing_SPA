@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { nameFieldValidations, emailFieldValidations } from '../../helpers'
+import PropTypes from 'prop-types';
 import './styles.scss';
 
 const UserDataForm = ({ closeModal, message = true, name = true }) => {
@@ -8,10 +9,8 @@ const UserDataForm = ({ closeModal, message = true, name = true }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-
         const nameResult = nameFieldValidations(event.target.user_name.value);
         const emailResult = emailFieldValidations(event.target.user_email.value);
-
         if(nameResult && emailResult)
         {
             emailjs.sendForm('contact_service', 'contact_form', event.target, 'user_iHcAhH2HFpHfkspecFfaT')
@@ -29,7 +28,6 @@ const UserDataForm = ({ closeModal, message = true, name = true }) => {
                     return { ...prevState, name: true }
                 });
             }
-
             if(!emailResult)
             {
                 setErrors(prevState => {
@@ -38,11 +36,9 @@ const UserDataForm = ({ closeModal, message = true, name = true }) => {
             }
         }
       };
-
       const handleOnChange = () => {
         setErrors({ name: false, email: false });
       }
-
       const closeModalHandler = () => {
         closeModal(false);
       }
@@ -78,6 +74,12 @@ const UserDataForm = ({ closeModal, message = true, name = true }) => {
         </div>
     </div>
     )
+};
+
+UserDataForm.propTypes = {
+    closeModal: PropTypes.func,
+    message: PropTypes.bool,
+    name: PropTypes.bool,
 };
 
 export default UserDataForm;

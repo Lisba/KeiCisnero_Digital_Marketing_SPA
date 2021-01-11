@@ -10,6 +10,6 @@ const SocialNetworks = () => {
             <div><a className="facebook" href="https://www.facebook.com/Emprendedores-Online-100509058261824/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></div>
         </Fragment>
     )
-}
+};
 
 export default SocialNetworks;

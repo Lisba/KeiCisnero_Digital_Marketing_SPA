@@ -4,10 +4,9 @@ import Articles from '../EntryPointArticles';
 import NotFoundPage from '../containers/NotFoundPage';
 import LoadImage from './LoadImage';
 
-const Post = React.lazy( () => import(`./Post`));
+const Post = React.lazy(() => import(`./Post`));
 
 const ArticleContent = () => {
-
     let { id } = useParams();
     let parsedId = parseInt(id); // For use strict equality operator below.
     const [post, setPost] = useState('');
@@ -64,6 +63,6 @@ const ArticleContent = () => {
             }
         </Fragment>
     )
-}
+};
 
 export default ArticleContent;

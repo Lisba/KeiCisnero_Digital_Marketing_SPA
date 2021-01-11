@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Parallax } from 'react-parallax';
+import PropTypes from 'prop-types';
 
-const Start = React.memo( ({ src, alt="" }) => {
+const Start = React.memo(({ src, alt = "" }) => {
     return(
         <div className="start">
             <Parallax
@@ -16,5 +17,10 @@ const Start = React.memo( ({ src, alt="" }) => {
         </div>
     )
 });
+
+Start.propTypes = {
+    src: PropTypes.string,
+    alt: PropTypes.string,
+};
 
 export default Start;

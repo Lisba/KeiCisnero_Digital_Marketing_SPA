@@ -1,8 +1,8 @@
 import React, { useState, Fragment } from 'react';
 import { OnlineEntrepreneurship } from '../components';
+import PropTypes from 'prop-types';
 
-const OnlineEntrepreneurshipRender = (props) => {
-
+const OnlineEntrepreneurshipRender = ({ alone }) => {
     const [loading, setLoading] = useState(true);
 
     const OnlineEntrepreneurshipImage = new Image();
@@ -16,11 +16,15 @@ const OnlineEntrepreneurshipRender = (props) => {
         <Fragment>
             {loading ? <div className="lds-ring"><div></div><div></div><div></div><div></div></div> :
                 <Fragment>
-                    <OnlineEntrepreneurship src={OnlineEntrepreneurshipImage.src} alone={props.alone} />
+                    <OnlineEntrepreneurship src={OnlineEntrepreneurshipImage.src} alone={alone} />
                 </Fragment>
             }
         </Fragment>
     )
-}
+};
+
+OnlineEntrepreneurshipRender.propTypes = {
+    alone: PropTypes.bool,
+};
 
 export default OnlineEntrepreneurshipRender;

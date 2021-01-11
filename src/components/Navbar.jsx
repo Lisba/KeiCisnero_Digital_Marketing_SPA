@@ -5,14 +5,12 @@ import NavButtons from './NavButtons';
 
 const Navbar = () => {
 
-    function showMenu()
-    {
-        document.getElementById('burgerMenuOpened').style.left = '10%'
+    const showMenu = () => {
+        document.getElementById('burgerMenuOpened').style.left = '10%';
     }
 
-    function hideMenu()
-    {
-        document.getElementById('burgerMenuOpened').style.left = '100%'
+    const hideMenu = () => {
+        document.getElementById('burgerMenuOpened').style.left = '100%';
     }
 
     return (
@@ -33,6 +31,6 @@ const Navbar = () => {
             </nav>
         </nav>
     )
-}
+};
 
 export default Navbar;
