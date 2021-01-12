@@ -36,7 +36,7 @@
     margin: 0;
     padding: 0;
     align-self: center;
-    font-size: 190 rem;
+    font-size: 190%;
     color: black;
   }
 
@@ -113,4 +113,10 @@
     text-align: start;
     color: red;
     font-size: 70%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .contact-form > input[type="submit"] {
+      width: unset;
+    }
   }

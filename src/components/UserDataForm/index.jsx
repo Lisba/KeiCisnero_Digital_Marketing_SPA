@@ -4,7 +4,7 @@ import { nameFieldValidations, emailFieldValidations } from '../../helpers'
 import PropTypes from 'prop-types';
 import './styles.scss';
 
-const UserDataForm = ({ closeModal, message = true, name = true }) => {
+const UserDataForm = ({ closeModal, title = '¡Cuéntame de ti!', message = true, name = true }) => {
     const [errors, setErrors] = useState({ name: false, email: false });
 
     const handleSubmit = (event) => {
@@ -47,7 +47,7 @@ const UserDataForm = ({ closeModal, message = true, name = true }) => {
     <div id="modal" className="modal-window" id="modal-window">
         <div className="modal_content" id="modal_content">
             <div className="modal-header" id="modal-header">
-                <h1 className="header-title">¡Responderé a la brevedad posible!</h1>
+                <h1 className="header-title">{title}</h1>
                 <span className="header-close" id="close" onClick={closeModalHandler}>&times;</span>
             </div>
             <form id="contact_form" className="contact-form" onSubmit={handleSubmit}>
@@ -80,6 +80,7 @@ UserDataForm.propTypes = {
     closeModal: PropTypes.func,
     message: PropTypes.bool,
     name: PropTypes.bool,
+    title: PropTypes.string
 };
 
 export default UserDataForm;
