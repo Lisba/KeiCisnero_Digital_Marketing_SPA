@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-const ImageLoad = React.memo(({ src, placeholder, alt = "" }) => {
+const ImageLoad = React.memo(({ src, placeholder, alt = '' }) => {
   const [loading, setLoading] = useState(true);
   const [currentSrc, setCurrentSrc] = useState(placeholder);
 
@@ -13,20 +13,20 @@ const ImageLoad = React.memo(({ src, placeholder, alt = "" }) => {
       // When image is loaded replace the src and set loading to false
       setLoading(false);
       setCurrentSrc(src);
-    }
-  }, [src])
+    };
+  }, [src]);
 
   return (
     <img
       src={currentSrc}
       style={{
         opacity: loading ? 0.5 : 1,
-        transition: "opacity .5s linear"
+        transition: 'opacity .5s linear',
       }}
       alt={alt}
-      className="articleContentImg"
+      className='articleContentImg'
     />
-  )
+  );
 });
 
 ImageLoad.propTypes = {

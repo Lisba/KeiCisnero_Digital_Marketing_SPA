@@ -10,29 +10,39 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Switch>
-          <Route exact path="/">
+          <Route exact path='/'>
             <Home />
           </Route>
 
-          <Route exact path="/articles">
-            <Suspense delayMs={500} fallback={<div className="lds-ring"><div></div><div></div><div></div><div></div></div>}>
+          <Route exact path='/articles'>
+            <Suspense
+              delayMs={500}
+              fallback={
+                <div className='lds-ring'>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              }
+            >
               <ArticleList />
             </Suspense>
           </Route>
 
-          <Route exact strict path="/articles/:id">
-              <ArticleContent />
+          <Route exact strict path='/articles/:id'>
+            <ArticleContent />
           </Route>
 
-          <Route exact path="/online-entrepreneurship">
+          <Route exact path='/online-entrepreneurship'>
             <OnlineEntrepreneurshipRender alone />
           </Route>
 
-          <Route exact path="/gallery">
+          <Route exact path='/gallery'>
             <Gallery />
           </Route>
 
-          <Route path="*">
+          <Route path='*'>
             <NotFoundPage />
           </Route>
         </Switch>

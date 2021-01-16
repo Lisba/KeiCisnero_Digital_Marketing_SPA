@@ -1,1 +1,1 @@
-export * from './contactFormValidations'
+export * from './contactFormValidations';

@@ -4,28 +4,39 @@ import Articles from '../EntryPointArticles';
 import { ArticleCard } from '../components';
 
 const ArticleList = () => {
-    window.scroll({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-    });
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth',
+  });
 
-    return (
-        <div className="articleCardListDiv">
-            <ul className="articleCardListUl">
-                {
-                    Articles.map(item => (
-                            <li key={item.id} className="aritcleCardListLi">
-                                <Link to={`/articles/${item.id}`} className={`articleLinkList cardList${item.id}`}>
-                                    <ArticleCard className="articleCardListContainer" icon={item.icon} placeholderImage={require('../assets/static/outdoors-entrepreneurshipPH.jpg').default} imgRoute={item.cover_image} alt={item.cover_image} title={item.title} text={item.description} imgContainer="articleListImg" textContainer="articleListText" width="300" height="300" />
-                                </Link>
-                            </li>
-                        )
-                    )
+  return (
+    <div className='articleCardListDiv'>
+      <ul className='articleCardListUl'>
+        {Articles.map((item) => (
+          <li key={item.id} className='aritcleCardListLi'>
+            <Link to={`/articles/${item.id}`} className={`articleLinkList cardList${item.id}`}>
+              <ArticleCard
+                className='articleCardListContainer'
+                icon={item.icon}
+                placeholderImage={
+                  require('../assets/static/outdoors-entrepreneurshipPH.jpg').default
                 }
-            </ul>
-        </div>
-    )
+                imgRoute={item.cover_image}
+                alt={item.cover_image}
+                title={item.title}
+                text={item.description}
+                imgContainer='articleListImg'
+                textContainer='articleListText'
+                width='300'
+                height='300'
+              />
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 };
 
 export default ArticleList;

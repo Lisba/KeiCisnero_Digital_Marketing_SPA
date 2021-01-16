@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 const Post = ({ postContent }) => {
-    return <Fragment>{postContent}</Fragment>
+  return <>{postContent}</>;
 };
 
 Post.propTypes = {
-    postContent: PropTypes.element,
+  postContent: PropTypes.element,
 };
 
 export default Post;
