@@ -1,0 +1,13 @@
+.shareButtonsContainer {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .shareButtonsContainer {
+    flex-direction: row;
+    position: unset;
+  }
+}

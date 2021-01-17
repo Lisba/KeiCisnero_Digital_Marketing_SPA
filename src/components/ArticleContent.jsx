@@ -1,15 +1,19 @@
 import React, { useState, useEffect, Suspense } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useLocation } from 'react-router-dom';
 import Articles from '../EntryPointArticles';
 import NotFoundPage from '../containers/NotFoundPage';
 import LoadImage from './LoadImage';
+import ShareButtons from './shareButtons';
+import { SITE_URL } from '../helpers';
 
 const Post = React.lazy(() => import(`./Post`));
 
 const ArticleContent = () => {
-  let { id } = useParams();
-  let parsedId = parseInt(id); // For use strict equality operator below.
   const [post, setPost] = useState('');
+  let { id } = useParams();
+  let { pathname } = useLocation();
+  let currentUrl = SITE_URL + pathname;
+  let parsedId = parseInt(id); // For use strict equality operator below.
   let articleData = {};
   let boolean = false;
 
@@ -71,6 +75,7 @@ const ArticleContent = () => {
                 {post && <Post postContent={post} />}
               </Suspense>
             </div>
+            <ShareButtons currentUrl={currentUrl} />
           </article>
         </>
       )}
