@@ -21,7 +21,9 @@ const NavButtons = ({ className }) => {
           <Link to='/gallery'>Galería</Link>
         </div>
         <div>
-          <Link onClick={onClickHandler}>Contáctame</Link>
+          <Link to='#' onClick={onClickHandler}>
+            Contáctame
+          </Link>
         </div>
       </div>
     </>

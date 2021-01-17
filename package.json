@@ -9,7 +9,8 @@
     "build": "webpack --mode production",
     "predeploy": "npm run build",
     "deploy": "firebase deploy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "husky install"
   },
   "keywords": [],
   "author": "Lisbaldy Ojeda",
@@ -22,8 +23,11 @@
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
     "react-parallax": "^3.0.3",
+    "react-redux": "^7.2.2",
     "react-responsive-carousel": "^3.2.7",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "seamless-immutable": "^7.1.4"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
@@ -43,6 +47,8 @@
     "gh-pages": "^3.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
+    "husky": "^5.0.6",
+    "lint-staged": ">=10",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.1",
     "prettier": "2.2.1",
@@ -50,5 +56,15 @@
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js}": "yarn format",
+    "*.{js,css,md}": "prettier --write"
   }
 }
