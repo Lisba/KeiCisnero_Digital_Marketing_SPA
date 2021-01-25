@@ -11,6 +11,7 @@ import {
   TelegramIcon,
 } from 'react-share';
 import { DESCRIPTION, HASHTAG, BUTTON_CLASS_NAME, SEPARATOR } from './constants';
+import './styles.scss';
 
 const shareButtons = ({ currentUrl }) => {
   return (

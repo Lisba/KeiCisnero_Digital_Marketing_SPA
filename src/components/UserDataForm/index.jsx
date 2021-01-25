@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import { nameFieldValidations, emailFieldValidations } from '../../helpers';
 import PropTypes from 'prop-types';
+import { nameFieldValidations, emailFieldValidations } from '@helpers';
 import './styles.scss';
 
 const UserDataForm = ({ closeModal, title = '¡Cuéntame de ti!', message = true, name = true }) => {

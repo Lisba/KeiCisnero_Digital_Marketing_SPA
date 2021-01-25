@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Parallax } from 'react-parallax';
 import PropTypes from 'prop-types';
 

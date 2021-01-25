@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { SocialNetworks, NavButtons } from '../../components';
+import { SocialNetworks, NavButtons } from '@components';
 
 const Navbar = () => {
   const showMenu = () => {

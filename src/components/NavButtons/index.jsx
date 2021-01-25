@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { UserDataForm } from '../../components';
 import PropTypes from 'prop-types';
+import { UserDataForm } from '@components';
 
 const NavButtons = ({ className }) => {
   const [showModal, setShowModal] = useState(false);

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Parallax } from 'react-parallax';
-import ImgOnlineEntrepreneurship from './ImgOnlineEntrepreneurship';
-import Articles from '../EntryPointArticles';
 import PropTypes from 'prop-types';
+import { ImgOnlineEntrepreneurship } from '@components';
+import Articles from '@entryPointArticles';
 
 const OnlineEntrepreneurship = ({ src, alone }) => {
   return (

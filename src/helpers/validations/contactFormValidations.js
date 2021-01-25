@@ -1,4 +1,4 @@
-import { userNameRegex, userEmailRegex } from '../../helpers';
+import { userNameRegex, userEmailRegex } from '@helpers';
 
 export const nameFieldValidations = (name) => {
   return userNameRegex.test(name);

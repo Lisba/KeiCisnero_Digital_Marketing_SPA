@@ -13,3 +13,4 @@ export { default as OnlineEntrepreneurship } from './OnlineEntrepreneurship';
 export { default as Post } from './Post';
 export { default as SocialNetworks } from './SocialNetworks';
 export { default as Start } from './Start';
+export { default as ShareButtons } from './ShareButtons';

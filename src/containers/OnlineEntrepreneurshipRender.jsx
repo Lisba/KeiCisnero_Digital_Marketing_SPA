@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { OnlineEntrepreneurship } from '../components';
 import PropTypes from 'prop-types';
+import { OnlineEntrepreneurship } from '@components';
 
 const OnlineEntrepreneurshipRender = ({ alone }) => {
   const [loading, setLoading] = useState(true);

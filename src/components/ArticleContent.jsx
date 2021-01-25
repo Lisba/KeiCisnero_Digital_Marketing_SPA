@@ -1,10 +1,9 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import { useParams, useLocation } from 'react-router-dom';
-import Articles from '../EntryPointArticles';
-import NotFoundPage from '../containers/NotFoundPage';
-import LoadImage from './LoadImage';
-import ShareButtons from './shareButtons';
-import { SITE_URL } from '../helpers';
+import Articles from '@entryPointArticles';
+import { NotFoundPage } from '@containers';
+import { ShareButtons, LoadImage } from '@components';
+import { SITE_URL } from '@helpers';
 
 const Post = React.lazy(() => import(`./Post`));
 

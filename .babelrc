@@ -1,6 +1,33 @@
 {
-    "presets": [
-        "@babel/preset-env",
-        "@babel/preset-react"
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        // "cwd": "babelrc",
+        // "root": [
+        //     "./src"
+        // ],
+        // "extensions": [
+        //     ".js",
+        //     ".jsx"
+        // ],
+        "alias": {
+            "@assets": "./src/assets",
+            "@posts": "./src/assets/posts",
+            "@static": "./src/assets/static",
+            "@styles": "./src/assets/styles",
+            "@components": "./src/components",
+            "@containers": "./src/containers",
+            "@helpers": "./src/helpers",
+            "@redux": "./src/redux",
+            "@routes": "./src/routes",
+            "@entryPointArticles": "./src/EntryPointArticles"
+        }
+      }
     ]
+  ]
 }

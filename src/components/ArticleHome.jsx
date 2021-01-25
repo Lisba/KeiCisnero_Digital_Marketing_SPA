@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import ArticleCard from './ArticleCard';
-import Articles from '../EntryPointArticles';
 import Button from 'react-bootstrap/Button';
+import Articles from '@entryPointArticles';
+import { ArticleCard } from '@components';
 
 const ArticleHome = () => {
   const classNameArticleCard = 'articleCard';

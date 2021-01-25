@@ -4,7 +4,16 @@
       "es6": true,
       "node": true
     },
-    "extends": ["airbnb"],
+    "settings": {
+      "import/resolver": {
+        "babel-module": {}
+      }
+    },
+    "extends": [
+      "airbnb",
+      "plugin:import/errors",
+      "plugin:import/warnings"
+    ],
     "globals": {
       "document": false,
       "escape": false,
