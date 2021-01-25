@@ -7,7 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "firebase deploy",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "husky install"
